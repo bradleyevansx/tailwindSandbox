@@ -1,0 +1,43 @@
+* {
+  scrollbar-color: #777 transparent;
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 15px;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #777;
+  background-clip: padding-box;
+  border: 0 solid transparent;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #777;
+}
+::-webkit-scrollbar-button {
+  background-color: #777;
+}
+/* Only IE */
+html {
+  scrollbar-face-color: #777;
+  scrollbar-shadow-color: #888;
+  scrollbar-highlight-color: tran;
+}
+/* Only FireFox */
+/* View Scrollbar */
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

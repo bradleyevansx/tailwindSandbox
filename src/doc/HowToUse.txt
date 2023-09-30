@@ -1,0 +1,173 @@
+Any measurements are in tailwinds standard. paddding of 5 is tailwind: p-5 not 5px of padding.
+
+Any classes that are contained within these component classes cannot be overwritten in line.
+If a button has a bg of neutral-500 in the class primary-btn you cannot override is in line.
+Consider creating a new component class, or starting from scratch in line.
+
+
+Font Faces
+    These are all the available fonts. Use the font you want with font-<selection>
+    and edit the size of the text with text-<selection>.
+
+Cabinet Grotesk Fonts
+
+    CabinetGrotesk-Variable: font-cabinet-vari
+    CabinetGrotesk-Thin: font-cabinet-thin
+    CabinetGrotesk-Extralight: font-cabinet-extralight
+    CabinetGrotesk-Light: font-cabinet-light
+    CabinetGrotesk-Regular: font-cabinet-regular
+    CabinetGrotesk-Medium: font-cabinet-medium
+    CabinetGrotesk-Bold: font-cabinet-bold
+    CabinetGrotesk-Extrabold: font-cabinet-extrabold
+    CabinetGrotesk-Black: font-cabinet-black
+
+General Sans Fonts
+
+    GeneralSans-Variable: font-general-vari
+    GeneralSans-VariableItalic: font-general-vari-italic
+    GeneralSans-Extralight: font-general-extralight
+    GeneralSans-ExtralightItalic: font-general-extralight-italic
+    GeneralSans-Light: font-general-light
+    GeneralSans-LightItalic: font-general-light-italic
+    GeneralSans-Regular: font-general-regular
+    GeneralSans-Italic: font-general-italic
+    GeneralSans-Medium: font-general-medium
+    GeneralSans-MediumItalic: font-general-medium-italic
+    GeneralSans-Semibold: font-general-semibold
+    GeneralSans-SemiboldItalic: font-general-semibold-italic
+    GeneralSans-Bold: font-general-bold
+    GeneralSans-BoldItalic: font-general-bold-italic
+
+Background Classes
+    Apply these classes to just to recieve the background color on the element.
+    Background-1 is the closest to the end of the scale that you are using(neutral-50 for light mode, neutral-900 for dark mode).
+    Inverse-Background-1 is the opposite.
+
+    Background-1: background-1
+    Background-2: background-2
+    Background-3: background-3
+    Background-4: background-4
+    Inverse-Background-1: inverse-background-1
+    Inverse-Background-2: inverse-background-2
+
+Card Classes
+    Apply these classes on container elements that will house "sections" of content.
+    The styles applied are just the background color associated with the number, and a padding of 5.
+    Card-1 is reserved for the body or whatever element is housing the entire page. 
+    Card-2 is meant to house any content.
+    Card-3 and 4 can also house any content but is meant to be inside a card-2 for consistency.
+    Every page should be a Card-1 with multiple Card-2s inside. Card-3 and 4 should be reserved for content
+    that is mean to stand out and should be used sparingly(especially Card-4).
+    Invese cards are mean to give contrast to cards that are next to it. Use sparingly as well.
+
+    Inverse-Card-1: inverse-card-1
+    Inverse-Card-2: inverse-card-2
+    Card-1: card-1
+    Card-2: card-2
+    Card-3: card-3
+    Card-4: card-4
+
+Components
+    These are all components that can be created with just a css class.
+    Apply the css class to element.
+
+    Branded-Button: branded-btn
+    Primary-Button: primary-btn
+    Green-Button: green-btn
+    Danger-Button: danger-btn
+
+Button Group Classes
+    Apply Button-Group-Container to a div and put as many buttons inside as you want.
+    If the width of the Button-Group-Container exceeds the width of the container surrounding
+    the Button-Group-Container it will wrap the buttons to a second line. If this happens you
+    must put the buttons into a second Button-Group-Container below the first.
+
+    Button-Group-Container: button-group-container
+
+Input and Form Classes
+    Put label and input element inside a div. Label then input.
+    Put the Input-Label class on the label and set the FOR attribute
+    to the id of the input element.
+
+    Text-Input: text-input
+    Text-Input-Disabled: text-input-disabled
+    Input-Label: input-label
+    Input-Label-Disabled: input-label-disabled
+    Checkbox-Input: checkbox-input
+    Checkbox-Input-Disabled: checkbox-input-disabled
+    Floating-Input-Label: floating-input-label
+    Floating-Input-Text: floating-input-text
+        PUT CLASS peer ON ELEMENT YOU PUT THIS CLASS ON
+
+Utility Classes
+
+Tailwind CSS utility classes allow you to apply specific styles to individual elements or components. These classes are highly customizable and cover a wide range of styling options.
+Text and Typography
+    These classes are used to ensure same text sizing across all elements.
+    Use Heading and desire font variation on any headings.
+    Use Text and desired font variation for any text elements that are not headings.
+    Use the inverse text classes for text within the Inverse-Cards
+
+    Heading-2: heading-2
+    Heading-Vari: heading-vari
+    Heading-Thin: heading-thin
+    Heading-Extralight: heading-extralight
+    Heading-Light: heading-light
+    Heading-Regular: heading-regular
+    Heading-Medium: heading-medium
+    Heading-Bold: heading-bold
+    Heading-Extrabold: heading-extrabold
+    Heading-Black: heading-black
+    Inverse-Heading-1: inverse-heading-1
+    Inverse-Heading-2: inverse-heading-2
+    Inverse-Text-1: inverse-text-1
+    Inverse-Text-2: inverse-text-2
+    Text-Vari: text-vari
+    Text-Vari-Italic: text-vari-italic
+    Text-Extralight: text-extralight
+    Text-Extralight-Italic: text-extralight-italic
+    Text-Light: text-light
+    Text-Light-Italic: text-light-italic
+    Text-Regular: text-regular
+    Text-Italic: text-italic
+    Text-Medium: text-medium
+    Text-Medium-Italic: text-medium-italic
+    Text-Semibold: text-semibold
+    Text-Semibold-Italic: text-semibold-italic
+    Text-Bold: text-bold
+    Text-Bold-Italic: text-bold-italic
+    Sub-Text: sub-text
+    Hidden-Text: hidden-text
+
+Dividers
+    Use for generic line to separate content within cards.
+
+    Inverse-Divider-1: inverse-divider-1
+    Inverse-Divider-2: inverse-divider-2
+    Divider-1: divider-1
+    Divider-2: divider-2
+
+Progress Bar
+    Use two divs. One with inside class and one with outside class.
+    Set width of the inside bar to be the percentage that represents the progress.
+
+    Progress-Bar-Outside: progress-bar-outside
+    Progress-Bar-Inside: progress-bar-inside
+
+Indicators
+    Apply to a span.
+
+    Light-Indicator: light-indicator
+    Dark-Indicator: dark-indicator
+    Blue-Indicator: blue-indicator
+    Green-Indicator: green-indicator
+    Red-Indicator: red-indicator
+    Yellow-Indicator: yellow-indicator
+
+Notifications
+    Apply to a div inside the element you want to have the notification bubble on.
+    Put the number inside the div.
+    Set parent element to relative. 
+
+    Notification-Count: notification-count
+        SET PARENT ELEMENT TO RELATIVE

@@ -1,0 +1,35 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        "general-vari": ["GeneralSans-Variable", "sans"],
+        "general-vari-italic": ["GeneralSans-VariableItalic", "sans"],
+        "general-extralight": ["GeneralSans-Extralight", "sans"],
+        "general-extralight-italic": ["GeneralSans-ExtralightItalic", "sans"],
+        "general-light": ["GeneralSans-Light", "sans"],
+        "general-light-italic": ["GeneralSans-LightItalic", "sans"],
+        "general-regular": ["GeneralSans-Regular", "sans"],
+        "general-italic": ["GeneralSans-Italic", "sans"],
+        "general-medium": ["GeneralSans-Medium", "sans"],
+        "general-medium-italic": ["GeneralSans-MediumItalic", "sans"],
+        "general-semibold": ["GeneralSans-Semibold", "sans"],
+        "general-semibold-italic": ["GeneralSans-SemiboldItalic", "sans"],
+        "general-bold": ["GeneralSans-Bold", "sans"],
+        "general-bold-italic": ["GeneralSans-BoldItalic", "sans"],
+        "cabinet-vari": ["CabinetGrotesk-Variable", "sans"],
+        "cabinet-thin": ["CabinetGrotesk-Thin", "sans"],
+        "cabinet-extralight": ["CabinetGrotesk-Extralight", "sans"],
+        "cabinet-light": ["CabinetGrotesk-Light", "sans"],
+        "cabinet-regular": ["CabinetGrotesk-Regular", "sans"],
+        "cabinet-medium": ["CabinetGrotesk-Medium", "sans"],
+        "cabinet-bold": ["CabinetGrotesk-Bold", "sans"],
+        "cabinet-extrabold": ["CabinetGrotesk-Extrabold", "sans"],
+        "cabinet-black": ["CabinetGrotesk-Black", "sans"],
+      },
+    },
+  },
+  plugins: [],
+};
